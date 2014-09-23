@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.supercsv.io.CsvBeanWriter;
@@ -31,6 +32,7 @@ public class AqsController {
 
 
 	@RequestMapping("/year")
+    @ResponseBody
 	public Page<SiteAggregate> findByYear(@RequestParam(value = "year",required = false,
 	                                                    defaultValue = "2010") String year,
                                          @RequestParam(value = "page",required = false,
@@ -44,6 +46,7 @@ public class AqsController {
 	}
 
 	@RequestMapping("/site")
+    @ResponseBody
 	public Page<SiteAggregate> findById(@RequestParam(value = "id",required = true) String id) {
 
 		Page p = solrSiteAggregateRepository.findById(id);
@@ -51,6 +54,7 @@ public class AqsController {
 	}
 
 	@RequestMapping("/state")
+    @ResponseBody
 	public Page<SiteAggregate> findById(@RequestParam(value = "year",required = false,
 	                                                    defaultValue = "2010") String year,
                                         @RequestParam(value = "state",required = false,
