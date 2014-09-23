@@ -12,31 +12,51 @@
         <tbody>
             <c:forEach var="locations" items="${locations}" >
                 <tr>
-                    <td>ID</td>
-                    <td>${locations.id}</td>
-                    <td>Year</td>
-                    <td>${locations.year}</td>
-                    <td>Site Num</td>
-                    <td>${locations.site_num}</td>
-                    <td>Latitude</td>
-                    <td>${locations.latitude}</td>
-                    <td>Longitude</td>
-                    <td>${locations.longitude}</td>
-                    <td>State</td>
-                    <td>${locations.state_nm}</td>
-                    <td>County</td>
-                    <td>${locations.county_nm}</td>
-                    <td>Parameter Name</td>
-                    <td>${locations.parameter_nm}</td>
-                    <td>Pol Standard</td>
-                    <td>${locations.pol_standard}</td>
-                    <td>Mean</td>
-                    <td>${locations.mean}</td>
-                    <td>Deviation</td>
-                    <td>${locations.deviation}</td>
+                    <th>ID</th>
+                    <th>Year</th>
+                    <th>Site Num</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>State</th>
+                    <th>County</th>
+                    <th>Parameter Name</th>
+                    <th>Pol Standard</th>
+                    <th>Mean</th>
+                    <th>Deviation</th>
+                    <th>POC</th>
+                    <th>Max Value 1</th>
+                    <th>Max Value 1 Day Time</th>
+                    <th>Max Value 2</th>
+                    <th>Max Value 2 Day Time</th>
+                    <th>Max Value 3</th>
+                    <th>Max Value 3 Day Time</th>
+                    <th>Max Value 4</th>
+                    <th>Max Value 4 Day Time</th>
                 </tr>
-            </c:forEach> 
+                <tr>
+                    <td>${locations.id}</td>
+                    <td>${locations.year}</td>
+                    <td>${locations.site_num}</td>
+                    <td>${locations.latitude}</td>
+                    <td>${locations.longitude}</td>
+                    <td>${locations.state_nm}</td>
+                    <td>${locations.county_nm}</td>
+                    <td>${locations.parameter_nm}</td>
+                    <td>${locations.pol_standard}</td>
+                    <td>${locations.mean}</td>
+                    <td>${locations.deviation}</td>
+                    <td>${locations.poc}</td>
+                    <td>${locations.max_value_1}</td>
+                    <td>${locations.max_day_time_1}</td>
+                    <td>${locations.max_value_2}</td>
+                    <td>${locations.max_day_time_2}</td>
+                    <td>${locations.max_value_3}</td>
+                    <td>${locations.max_day_time_3}</td>
+                    <td>${locations.max_value_4}</td>
+                    <td>${locations.max_day_time_4}</td>
+                </tr>
+            </c:forEach>
         </tbody>
-    </table> 
+    </table>
 </body>
 </html>

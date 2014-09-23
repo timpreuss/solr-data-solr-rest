@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List of Users</title>
+<title>List by State</title>
 </head>
 <body>
 <table border="1" align="center" style="width:50%">

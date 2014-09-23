@@ -96,7 +96,7 @@ public class AqsController {
             siteList.add(siteAggregate);
         }
 
-		return new ModelAndView("location", "locations", siteList);
+		return new ModelAndView("site", "locations", siteList);
 	}
 
     @RequestMapping(value = "/downloadCSV")
